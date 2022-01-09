@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="150dp"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    android:background="@color/bg_type1_error_layout">
+
+    <!--<net.orandja.shadowlayout.ShadowLayout
+        android:id="@+id/container_shadow_dialog_type1_errors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog_type1_errors"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shadow_cast_only_background="true"
+        app:shadow_color="#1A000000"
+        app:shadow_downscale="1"
+        app:shadow_radius="10"
+        app:shadow_with_color="false"
+        app:shadow_with_css_scale="true"
+        app:shadow_with_dpi_scale="true">
+
+        <include
+            layout="@layout/dialog_type1_errors"
+            android:layout_width="260dp"
+            android:layout_height="125dp" />
+
+    </net.orandja.shadowlayout.ShadowLayout>-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="260dp"
+        android:layout_height="125dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/bg_dialog_type1_errors">
+
+        <TextView
+            android:id="@+id/error_message"
+            android:layout_width="131dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/action_retry"
+            android:layout_width="100dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:background="@drawable/bg_btn_generic"
+                android:text="Try again" />
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/action_dismiss"
+            android:layout_width="100dp"
+            android:layout_height="23dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:background="@drawable/bg_btn_dismiss"
+                android:text="Dismiss" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

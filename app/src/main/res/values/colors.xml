@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="black_light">#B2BBC6</color>
+
+    <!--Color for Type1 error layout background-->
+    <color name="bg_type1_error_layout">#54c4c4c4</color>
+
+    <!--Common color for buttons-->
+    <color name="bg_btn_generic">#04a891</color>
+
+    <!--Common color for dismiss buttons-->
+    <color name="bg_btn_dismiss">@color/black_light</color>
+
+</resources>
